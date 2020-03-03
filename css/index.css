@@ -220,3 +220,28 @@ header img {
   font-size: 4rem;
   width: 40%;
 }
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #7D82B8;
+}
+.info img {
+  width: 20%;
+}
+.info h2 {
+  font-size: 4rem;
+  width: 40%;
+}
+.schedule {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.schedule img {
+  width: 15%;
+}
+.schedule h2 {
+  font-size: 4rem;
+  width: 40%;
+}
