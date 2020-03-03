@@ -136,6 +136,13 @@ html {
   width: 100%;
   margin: 0 auto;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans', sans-serif;
+}
 * {
   border: 1px black solid !important;
 }
@@ -163,7 +170,7 @@ html {
   width: 30%;
   text-decoration: none;
   color: #E6F9AF;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .navcontainer h1 {
   font-size: x-large;
@@ -177,7 +184,7 @@ html {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .navcontainer .logo i {
   color: #18314F;
@@ -188,14 +195,28 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #018E42;
+  background-color: #EFF6E0;
 }
 header h1 {
   font-size: 5rem;
   padding: 5%;
-  color: white;
-  font-family: 'Nunito', sans-serif;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
 }
 header img {
   width: 60%;
+}
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #A3BCF9;
+  padding: 2%;
+}
+.about img {
+  width: 20%;
+}
+.about h2 {
+  font-size: 4rem;
+  width: 40%;
 }
