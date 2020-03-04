@@ -1,0 +1,27 @@
+// Begin Mixins
+.flex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.direction(@direction,@align){
+    display:flex;
+    flex-direction: @direction;
+    align-items: @align;
+}
+
+.mediamode(){
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.custom-btn(@bg-color:#335C81, @width:10%, @font-color:white, @height:4rem) {
+    background-color:@bg-color;
+    width:@width;
+    color:@font-color;
+    font-size: 2rem;
+    border-radius: 5px;
+    height: @height;
+}
