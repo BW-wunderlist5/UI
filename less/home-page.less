@@ -1,15 +1,18 @@
 header {
     .direction(column, center);
     background-color: #EFF6E0;
-    h1{
-        background-color:#18314F;
+    .title{
         width:100%;
-        font-size: 4rem;
-        padding:5%;
-        color:#EFF6E0;
-        font-family:@main-font;
-        @media @mobile{
-            font-size:2rem;
+        .flex(center,center);
+        background-color:#18314F;
+        h1{
+            font-size: 4rem;
+            padding:5%;
+            color:#EFF6E0;
+            font-family:@main-font;
+            @media @mobile{
+                font-size:2rem;
+            }
         }
     }
     img {
@@ -30,7 +33,7 @@ header {
         }
     }
     h2{
-        font-size: 3rem;
+        font-size: 3.5rem;
         width:50%;
         @media @mobile{
             font-size:2rem;
@@ -52,7 +55,7 @@ header {
     }
     h2{
         color:#EFF6E0;
-        font-size: 4rem;
+        font-size: 3.5rem;
         width:40%;
         @media @mobile{
             font-size:2rem;
@@ -72,7 +75,7 @@ header {
         }
     }
     h2{
-        font-size: 4rem;
+        font-size: 3.5rem;
         width:40%;
         @media @mobile{
             font-size:2rem;
@@ -95,7 +98,7 @@ header {
     }
     h2{
         color:#EFF6E0;
-        font-size: 4rem;
+        font-size: 3.5rem;
         width:40%;
         @media @mobile{
             font-size:2rem;
@@ -109,7 +112,7 @@ header {
     h2{
         margin:2%;
         .flex(center,center);
-        font-size: 4rem;
+        font-size: 3.5rem;
         width:100%;
         @media @mobile{
             font-size:3rem;
@@ -119,7 +122,7 @@ header {
         margin:2%;
         .custom-btn();
         @media @mobile{
-            .custom-btn(@width:30%);
+            .custom-btn(@width:50%);
         }
     } 
 }
