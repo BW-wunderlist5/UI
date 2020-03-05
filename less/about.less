@@ -1,23 +1,42 @@
 .about-header{
-    .flex(space-evenly,center);
+    .direction(column,center);
+    height:50rem;
+    
+
     .about-info{
+        .direction(column,center);
+        padding:2%;
         h1{
-            font-size:6rem;
+            font-size:5rem;
+            @media @mobile{
+                font-size:4rem;
+            }
         }
         p{
             font-size:4rem;
+            @media @mobile{
+                font-size:3rem;
+            }
         }
     }
     img{
-        width:30%;
-        height:30rem;
+        width:60%;
+        height:65%;
+        @media @mobile{
+            width:100%;
+        }
+        
     }
 }
 .mission{
     background-color: #335C81;
     p{
+        padding:3%;
         color:white;
-        font-size:4rem;
+        font-size:3rem;
+        @media @mobile{
+            font-size:2.5rem;
+        }
     }
 }
 .team{

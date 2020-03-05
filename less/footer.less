@@ -1,25 +1,37 @@
 footer{
-    .flex(space-around,center);
+    .flex(center,center);
+    @media @mobile{
+        .direction(column-reverse,center);
+    }
+    nav{
+        width:80%;
+        .flex(flex-end,center);
+        @media @mobile{
+            .flex(space-evenly,center);
+            width:100%;
+        }
     a {
         font-size:2rem;
         text-decoration: none;
         color:black;
+        width:15%;
+        @media @mobile{
+            width: 30%;
+        }
     }
-    .logo{
-        width:12%;
-        h1{
-            font-size: x-large;
-            color:black;    
-        }
-        a{
+}
+    a{
+            .flex(center,center);
             text-decoration: none;
-            .flex(space-evenly, center);
-            font-family:@main-font;   
-        }
-        i{
-            color:#18314F;
-            margin: 5%;
-            font-size:x-large;
+            font-family:@main-font; 
+            i{
+                color:#18314F;
+                font-size:x-large;
+                margin:5%;
+            }
+            h1{
+                font-size: x-large;
+                color:black; 
         }
     }
 }
