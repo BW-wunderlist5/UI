@@ -181,8 +181,11 @@ p {
 .navcontainer nav a {
   width: 29%;
   text-decoration: none;
-  color: #E6F9AF;
+  color: white;
   font-family: 'Open Sans', sans-serif;
+}
+.navcontainer nav a:hover {
+  color: #18314F;
 }
 .navcontainer .logo {
   width: 10%;
@@ -194,7 +197,7 @@ p {
 }
 .navcontainer .logo h1 {
   font-size: x-large;
-  color: #E6F9AF;
+  color: white;
 }
 .navcontainer .logo a {
   text-decoration: none;
@@ -240,6 +243,9 @@ footer nav a {
   color: black;
   width: 15%;
 }
+footer nav a:hover {
+  color: #3590F3;
+}
 @media (max-width: 600px) {
   footer nav a {
     width: 30%;
@@ -265,19 +271,20 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #EFF6E0;
+  background-color: white;
+  height: 20%;
 }
 header .title {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #18314F;
+  background-color: #335C81;
 }
 header .title h1 {
   font-size: 4rem;
-  padding: 5%;
-  color: #EFF6E0;
+  padding: 3%;
+  color: white;
   font-family: 'Open Sans', sans-serif;
 }
 @media (max-width: 600px) {
@@ -286,14 +293,15 @@ header .title h1 {
   }
 }
 header img {
-  width: 70%;
+  height: 10%;
+  margin: 2% 0;
+  width: 73%;
 }
 .about {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: #A3BCF9;
-  padding: 2%;
 }
 @media (max-width: 600px) {
   .about {
@@ -303,16 +311,16 @@ header img {
   }
 }
 .about img {
-  width: 30%;
+  width: 20%;
 }
 @media (max-width: 600px) {
   .about img {
-    width: 70%;
+    width: 60%;
   }
 }
 .about h2 {
   font-size: 3.5rem;
-  width: 50%;
+  width: 40%;
 }
 @media (max-width: 600px) {
   .about h2 {
@@ -342,7 +350,7 @@ header img {
   }
 }
 .info h2 {
-  color: #EFF6E0;
+  color: white;
   font-size: 3.5rem;
   width: 40%;
 }
@@ -365,7 +373,7 @@ header img {
   }
 }
 .schedule img {
-  width: 15%;
+  width: 20%;
 }
 @media (max-width: 600px) {
   .schedule img {
@@ -405,7 +413,7 @@ header img {
   }
 }
 .display h2 {
-  color: #EFF6E0;
+  color: white;
   font-size: 3.5rem;
   width: 40%;
 }
@@ -443,6 +451,9 @@ header img {
   border-radius: 5px;
   height: 5rem;
 }
+.sign-up button:hover {
+  background-color: #4176a6;
+}
 @media (max-width: 600px) {
   .sign-up button {
     background-color: #335C81;
@@ -451,6 +462,9 @@ header img {
     font-size: 2rem;
     border-radius: 5px;
     height: 5rem;
+  }
+  .sign-up button:hover {
+    background-color: #4176a6;
   }
 }
 .about-header {
@@ -467,6 +481,7 @@ header img {
 }
 .about-header .about-info h1 {
   font-size: 5rem;
+  padding: 2%;
 }
 @media (max-width: 600px) {
   .about-header .about-info h1 {
@@ -482,8 +497,9 @@ header img {
   }
 }
 .about-header img {
-  width: 60%;
-  height: 65%;
+  width: 70%;
+  height: 70%;
+  padding-bottom: 4%;
 }
 @media (max-width: 600px) {
   .about-header img {
@@ -492,8 +508,12 @@ header img {
 }
 .mission {
   background-color: #335C81;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mission p {
+  width: 80%;
   padding: 3%;
   color: white;
   font-size: 3rem;
@@ -510,17 +530,25 @@ header img {
   align-items: flex-start;
   width: 100%;
 }
+@media (max-width: 600px) {
+  .team {
+    display: inline-block;
+  }
+}
 .team .box {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2%;
 }
 .team .box img {
   width: 50%;
   border-radius: 30rem;
+  padding: 2%;
 }
 .team .box h3 {
   font-size: 2rem;
+  padding: 1%;
 }
 .team .box p {
   font-size: 1.5rem;

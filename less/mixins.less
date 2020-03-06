@@ -11,17 +11,15 @@
     align-items: @align;
 }
 
-.mediamode(){
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.custom-btn(@bg-color:#335C81, @width:15%, @font-color:white, @height:5rem) {
+.custom-btn(@bg-color:@dark-blue, @width:15%, @font-color:white, @height:5rem) {
     background-color:@bg-color;
     width:@width;
     color:@font-color;
     font-size: 2rem;
     border-radius: 5px;
     height: @height;
+    @color2: lighten(@bg-color,10%);
+    &:hover{
+        background-color:@color2;
+    }
 }

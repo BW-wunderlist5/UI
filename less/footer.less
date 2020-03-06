@@ -6,6 +6,7 @@ footer{
     nav{
         width:80%;
         .flex(flex-end,center);
+        
         @media @mobile{
             .flex(space-evenly,center);
             width:100%;
@@ -15,6 +16,9 @@ footer{
         text-decoration: none;
         color:black;
         width:15%;
+        &:hover{
+            color:@nav-color;
+        }
         @media @mobile{
             width: 30%;
         }
@@ -25,7 +29,7 @@ footer{
             text-decoration: none;
             font-family:@main-font; 
             i{
-                color:#18314F;
+                color:@logo-color;
                 font-size:x-large;
                 margin:5%;
             }

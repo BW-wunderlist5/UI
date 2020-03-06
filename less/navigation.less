@@ -1,3 +1,7 @@
+// *{
+//     border:1px solid black !important;
+    
+// }
 
 .sticky-nav{
     position: sticky;
@@ -9,7 +13,7 @@
     .flex(space-around, center);
     width: 100%;
     height:10rem;
-    background-color: #3590F3;
+    background-color:@nav-color;
     @media @mobile{
         .direction(column,center);         
     } 
@@ -27,8 +31,11 @@
         a{
             width:29%;
             text-decoration: none;
-            color:#E6F9AF;
+            color:white;
             font-family:@main-font;
+            &:hover{
+                color:@logo-color;
+            }
         }
     }
 
@@ -39,7 +46,7 @@
          }  
         h1{
             font-size: x-large;
-            color:#E6F9AF;    
+            color:white;    
         }
         a{
             text-decoration: none;
@@ -47,7 +54,7 @@
             font-family:@main-font;   
         }
         i{
-            color:#18314F;
+            color:@logo-color;
             margin: 5%;
             font-size:x-large;
         }

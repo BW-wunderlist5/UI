@@ -8,6 +8,7 @@
         padding:2%;
         h1{
             font-size:5rem;
+            padding:2%;
             @media @mobile{
                 font-size:4rem;
             }
@@ -20,8 +21,9 @@
         }
     }
     img{
-        width:60%;
-        height:65%;
+        width:70%;
+        height:70%;
+        padding-bottom:4%;
         @media @mobile{
             width:100%;
         }
@@ -29,8 +31,10 @@
     }
 }
 .mission{
-    background-color: #335C81;
+    background-color: @dark-blue;
+    .flex(center,center);
     p{
+        width:80%;
         padding:3%;
         color:white;
         font-size:3rem;
@@ -40,17 +44,23 @@
     }
 }
 .team{
-    background-color: #A3BCF9;
+    background-color: @light-blue;
     .flex(space-evenly,flex-start);
     width:100%;
+    @media @mobile{
+        display:inline-block;
+    }
     .box{
         .direction(column,center);
+        padding:2%;
         img{
         width:50%;
         border-radius:30rem;
+        padding:2%;
         }
         h3{
             font-size:2rem;
+            padding:1%;
         }
         p{
             font-size:1.5rem;
